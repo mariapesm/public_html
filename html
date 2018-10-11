@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<body>
+<div id="highcharts-8392c836-55ad-4679-939d-a763913920d0"></div><script>
+(function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"World Population","style":{"fontFamily":"\"Lucida Grande\", \"Lucida Sans Unicode\", Verdana, Arial, Helvetica, sans-serif","color":"#333333","fontSize":"20px","fontWeight":"normal","fontStyle":"normal"}},"subtitle":{"text":"from the year 1955-2018","style":{"fontFamily":"\"Lucida Grande\", \"Lucida Sans Unicode\", Verdana, Arial, Helvetica, sans-serif","color":"#666666","fontSize":"16px","fontWeight":"normal","fontStyle":"normal"}},"exporting":{},"chart":{"type":"line","inverted":false,"width":2197,"height":494,"polar":false,"style":{"fontFamily":"\"Lucida Grande\", \"Lucida Sans Unicode\", Verdana, Arial, Helvetica, sans-serif","color":"#333","fontSize":"14px","fontWeight":"normal","fontStyle":"normal"},"plotBorderWidth":5,"borderWidth":1},"series":[{"name":"Population","_colorIndex":0,"_symbolIndex":0,"marker":{},"type":"area"}],"plotOptions":{"series":{"animation":false,"dataLabels":{"enabled":true}}},"legend":{},"data":{"csv":"\"Year(jule 1)\";\"Population\"\n1955;2772242535\n1960;3033212527\n1965;3339592688\n1970;3700577650\n1975;4079087198\n1980;4458411534\n1985;4873781796\n1990;5330943460\n1995;5751474416\n2000;6145006989\n2005;6542159383\n2010;6958169159\n2015;7383008820\n2016;7466964280\n2017;7550262101\n2018;7632819325","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"yAxis":[{"title":{"text":"billion people "},"labels":{}}],"xAxis":[{"title":{"style":{"fontFamily":"\"Lucida Grande\", \"Lucida Sans Unicode\", Verdana, Arial, Helvetica, sans-serif","color":"#666666","fontSize":"20px","fontWeight":"normal","fontStyle":"normal"}},"labels":{},"opposite":true,"reversed":false,"type":"logarithmic"}],"tooltip":{"borderWidth":4,"borderColor":"#00bcd4"}};/*
+// Sample of extending options:
+Highcharts.merge(true, options, {
+    chart: {
+        backgroundColor: "#bada55"
+    },
+    plotOptions: {
+        series: {
+            cursor: "pointer",
+            events: {
+                click: function(event) {
+                    alert(this.name + " clicked\n" +
+                          "Alt: " + event.altKey + "\n" +
+                          "Control: " + event.ctrlKey + "\n" +
+                          "Shift: " + event.shiftKey + "\n");
+                }
+            }
+        }
+    }
+});
+*/new Highcharts.Chart("highcharts-8392c836-55ad-4679-939d-a763913920d0", options);}}})();
+</script>
+<h1>Resources from:<h1>
+<p>http://www.worldometers.info/world-population/</p>
+</html>
+</body>
+</html>
